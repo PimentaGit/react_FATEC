@@ -1,5 +1,5 @@
 
-import Projetos_react from"react";
+import Letreiro from ".components/Letreiro";
 
 function Letreiro() {              
   return (
