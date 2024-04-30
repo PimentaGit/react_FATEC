@@ -10,6 +10,8 @@ import MinhasRotas from "./minhasRotas";
   function Index() {
     return (
       <MinhasRotas/>
+      <Letreiro/>
+      <Relogio/>
     );
   }
 
