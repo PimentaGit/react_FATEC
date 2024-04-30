@@ -2,8 +2,8 @@ import React from 'react';                       // importa o react para dentro 
 import ReactDOM from 'react-dom/client';         // para usar o virtualDom (vai direto no elemento)
 import './index.css';                            // importando o index.css - assim que eu importo um arquivo.
 import App from './App'; 
-import Relogio from './Relogio'; 
-import Letreiro from './Letreiro';                         // componente - importando componente que se chama app. *import Relogio from './Relogio';*
+import Relogio from './components/Relogio'; 
+import Letreiro from './components/Letreiro';                         // componente - importando componente que se chama app. *import Relogio from './Relogio';*
 import reportWebVitals from './reportWebVitals'; // Projeto google que vai ajudar o google a gerar estatísticas sobre o meu app. Dá pra tirar no app
 
 const root = ReactDOM.createRoot(document.getElementById('root'));  // reenderiza os componentes. o elemento html está na pasta public
