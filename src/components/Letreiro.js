@@ -1,36 +1,37 @@
-
-import Letreiro from"/letreiro";
-
+import { useEffect, useState } from "react"
 
 
-        function letreiroFrase(frase) {
-            const element = (
-                <h1>{frase}</h1>
-            )
-            ReactDOM.render(element, document.getElementById('root'))
+function Letreiro() {
 
+    const [temp, setTemp] = useState('');
+
+    useEffect(() => {
+
+    
+    let frase = "Venha estudar na FATEC"
+    let cont = 0
+
+    let intervalo = setInterval(() => {
+
+        let temp = ""
+
+        for (let i = 0; i < cont; i++) {
+            temp += frase[i]
         }
+        setTemp(temp)
+        cont++
 
-        let frase = "Venha estudar na FATEC!"
-        let cont = 0
+        if (cont > frase.length) {
+            clearInterval(intervalo)
+        }
+    }, 500)
+},[])
 
-
-        let intervalo = setInterval(() => {
-
-            let temp = ""
-
-            for (let i = 0; i < cont; i++) {
-                temp += frase[i]
-            }
-            letreiroFrase(temp)
-            cont++
-
-            if (cont > frase.length) {
-                clearInterval(intervalo)
-            }
-        }, 500)
-
-
+  return (
+    <div >
+     <h1>{temp}</h1>
+    </div>
+  );
+}
 
 export default Letreiro;
-
