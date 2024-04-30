@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import '.components/Letreiro.css'
 
 
 function Letreiro() {
@@ -28,7 +29,7 @@ function Letreiro() {
 },[])
 
   return (
-    <div >
+    <div > class = "letreiro">
      <h1>{temp}</h1>
     </div>
   );
