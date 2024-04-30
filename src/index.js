@@ -9,7 +9,7 @@ import reportWebVitals from './reportWebVitals'; // Projeto google que vai ajuda
 const root = ReactDOM.createRoot(document.getElementById('root'));  // reenderiza os componentes. o elemento html está na pasta public
 root.render(
   <React.StrictMode>
-    <App />
+    <Letreiro />
   </React.StrictMode>
 );
 
