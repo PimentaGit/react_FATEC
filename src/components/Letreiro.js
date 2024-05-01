@@ -8,7 +8,7 @@ function Letreiro() {
     useEffect(() => {
 
     
-    let frase = "Venha estudar na FATEC"
+    let frase = "Conheça a FATEC"
     let cont = 0
 
     let intervalo = setInterval(() => {
