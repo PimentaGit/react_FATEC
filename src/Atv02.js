@@ -6,7 +6,7 @@ export default function Contador(){
         
         <div>
             <h1>Atividade 02 - Contador</h1>
-            <Letreiro/>
+            <Contador/>
             <br/>
             <Link to="/">Retornar à página inicial</Link>
         </div>
