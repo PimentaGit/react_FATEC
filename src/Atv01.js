@@ -8,6 +8,7 @@ export default function Relogio(){
         <div>
             <h1>Atividade 01</h1>
             <Relogio/>
+            <Letreiro/>
             <br/>
             <Link to="/">Retornar à página inicial</Link>
         </div>
