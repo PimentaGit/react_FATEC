@@ -1,10 +1,14 @@
-import React from 'react';                       // importa o react para dentro da aplicação - local no node
-import ReactDOM from 'react-dom/client';         // para usar o virtualDom (vai direto no elemento)                       // importando o index.css - assim que eu importo um arquivo.
-import MinhasRotas from "./minhasRotas";
-import {BrowserRouter, Route, Routes} from "react-router-dom";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
 
-  const root = ReactDOM.createRoot(document.getElementById("root"));
-    root.render (
-      <MinhasRotas />
-    );
-   
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+
+reportWebVitals();

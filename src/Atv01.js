@@ -1,33 +1,16 @@
-import Relogio from './components/Relogio';
-import Letreiro from './components/Letreiro';
+import Letreiro from "./Letreiro";
+import Relogio from "./Relogio";
 import { Link } from "react-router-dom";
 
-export default function Relogio(){
+
+export default function Atv01() {
     return (
-        
-        <div>
+        <>
             <h1>Atividade 01</h1>
-            <Relogio/>
-            <Letreiro/>
-            <br/>
-            <Link to="/">Retornar à página inicial</Link>
-        </div>
-        
-       
-    );
+            <Relogio />
+            <Letreiro />
+            <br />
+            <Link to="/">retornar a página inicial</Link>
+        </>
+    )
 }
-
-export default function Calendario(){
-    return (
-        
-        <div>
-            <h1>Atividade 02</h1>
-            <Letreiro/>
-            <br/>
-            <Link to="/">Retornar à página inicial</Link>
-        </div>
-        
-       
-    );
-}
-
